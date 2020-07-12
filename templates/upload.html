@@ -1,1 +1,35 @@
 
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload</title>
+</head>
+<body>
+    <h2>  Image Caption Generator </h2>
+
+<form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+
+    <h3>Upload the image for which you want the text to be generated - </h3><br>
+    <input id="file-picker" type="file" name="file" accept="image/*">
+    <input type="submit" value="upload!">
+    
+
+</form>
+
+    <img src=" {{url_for('static', filename=image_name)}}">
+    
+    <form id="predict-form" action="{{url_for('predict')}}" method="POST">
+        <input type="submit" value="Click here to generate text!">
+        
+       <!-- 
+        "{{url_for('static', filename=prediction)}}"
+       -->
+       <p> {{prediction}} </p>
+       
+    </form>
+
+
+
+</body>
+</html>
