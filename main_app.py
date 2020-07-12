@@ -11,6 +11,7 @@ import argparse
 import os
 from flask import Flask,render_template,url_for,request
 '''
+#uncomment when running via cli
 ap = argparse.ArgumentParser()
 ap.add_argument('-i', '--image', required=True, help="Image Path")
 args = vars(ap.parse_args())
