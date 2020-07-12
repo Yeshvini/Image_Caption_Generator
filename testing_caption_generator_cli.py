@@ -20,6 +20,7 @@ def extract_features(filename, model):
         image = Image.open(filename)
         try:
             print(image)
+            print("Image loading...)
             image = Image.open(filename)
             
         except:
