@@ -1,7 +1,7 @@
 # Image_Caption_Generator
 
 Download the dataset from here - 
-<a href="http://example.com">https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/</a>
+<a href="https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/">Link</a>
 
 Execute training_caption_generator.py to load and save the model
 
